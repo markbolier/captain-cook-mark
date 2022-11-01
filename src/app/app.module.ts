@@ -7,10 +7,12 @@ import { AppComponent } from './app.component';
 import { PlannerModule } from './planner/planner.module';
 import { RecipesModule } from './recipes/recipes.module';
 import { SharedModule } from './shared/shared.module';
+import { NavigationComponent } from './shared/components/navigation/navigation.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavigationComponent
   ],
   imports: [
     BrowserModule,
@@ -18,7 +20,7 @@ import { SharedModule } from './shared/shared.module';
     FormsModule,
     PlannerModule,
     RecipesModule,
-    SharedModule
+    SharedModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
