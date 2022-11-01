@@ -1,1 +1,7 @@
-<p>planner works!</p>
+<div class="add-button"><button>+ Voeg recept toe</button></div>
+<div class="card" *ngFor="let meal of meals">
+	<img src="{{meal.img}}"/>
+	<div class="name"><h2>{{meal.name}}</h2></div>
+	<button class="delete-button">Verwijder recept</button>
+</div>
+
