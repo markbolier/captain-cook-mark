@@ -15,6 +15,7 @@ import { CardComponent } from './card/card.component';
   ],
   exports: [
     PlannerComponent,
+    CardComponent
   ]
 })
 export class PlannerModule { }
