@@ -1,5 +1,4 @@
 <app-card *ngFor="let recipe of recipes; let i = index" [id]="recipe.id" [size]="recipe.size" [img]="recipe.img" [name]="recipe.name" (delete)="onDelete($event)">
 	{{recipe.name}}
 </app-card>
-<div class="button-container" (click)="addRecipe()"><button>+</button></div>
-
+<app-button (click)="addRecipe()">+</app-button>
