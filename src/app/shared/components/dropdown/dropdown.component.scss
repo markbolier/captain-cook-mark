@@ -1,0 +1,10 @@
+.dropdown-container {
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+
+	a {
+		border: 1px solid #EFEFEF;
+		padding: 18px 100px 18px 18px;
+	}
+}
