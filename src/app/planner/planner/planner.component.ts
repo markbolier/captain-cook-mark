@@ -18,6 +18,11 @@ recipes = [
   addRecipe() {
     this.recipes.push({id: 6, name: 'New recipe', size: '2p', img: 'none'});
   }
+
+  onDelete(id: number) {
+    const deletedRecipe = this.recipes.findIndex((recipe) => recipe.id === id);
+    this.recipes.splice(deletedRecipe, 1);
+  }
   
   constructor() { }
 
