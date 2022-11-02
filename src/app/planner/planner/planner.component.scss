@@ -1,56 +1,62 @@
-.add-button {
+.card-container {
 	margin: 20px;
 	display: flex;
-	flex-direction: column;
-	border: 1px solid #EFEFEF;
-	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.10);
-	background-color:#EFEFEF;
-
-	button {
-		background-color: none;
-		border: none;
-		width: 600px;
-		height: 300px;
-		color: #696969;
-		font-size: 25px;
-	}
-}
-
-.card {
-	margin: 20px;
-	display: flex;
-	flex-direction: column;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
 	border: 1px solid #EFEFEF;
 	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.10);
 
-	.delete-button {
-		position: absolute;
-		align-self: flex-end;
-		color: white;
-		font-size: 40px;
-		background-color: transparent;
-		border: none;
-		margin: 0px 10px;
-	}
+		.name-wrapper {
+			background-color: white;
+			display: flex;
+			align-items: center;
+			padding: 20px;
+			margin-right: auto;
+			margin-left: 0;
 
+			.name {
+				font-weight: 400;
+				font-size: 20px;
+			};
+		};
+	
+.delete-button {
+	color: red;
+	font-size: 40px;
+	background-color: transparent;
+	border: none;
+	margin: 0px 10px;
+};
+
+img {
+	object-fit: cover;
+	height: 150px;
+	width: 150px;
+};
+
+@media (min-width: 1080px) {
+	flex-direction: column;
 
 	img {
-		object-fit: cover;
 		height: 250px;
 		width: 600px;
 	};
+};
+};
 
-	.name {
-		background-color: white;
-		height: 50px;
-		display: flex;
-		align-items: center;
-		padding: 5px;
-
-		h2 {
-			font-weight: 400;
-			font-size: 20px;
-			padding: 10px;
-		}
+.button-container {
+	margin: 20px;
+	text-align: center;
+	border: 1px solid #EFEFEF;
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.10);
+	background-color:#EFEFEF;
+	
+	button {
+		background-color: none;
+		border: none;
+		height: 150px;
+		color: #696969;
+		font-size: 100px;
 	};
 };
