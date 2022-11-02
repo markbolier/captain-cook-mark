@@ -1,8 +1,8 @@
 <div class="card-container">
-	<img src="{{img}}"/>
+	<img class="photo" src="{{img}}"/>
 	<div class="wrapper">
 		<h2 class="name"><ng-content></ng-content></h2>
 	</div>
 	<h2 class="size">{{size}}</h2>
-	<button class="delete-button" (click)="onClick(id)">x</button>
+	<app-button [isFluid]="true" (click)="onClick(id)">x</app-button>
 </div>
