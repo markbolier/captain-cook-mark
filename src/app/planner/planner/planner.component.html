@@ -1,6 +1,9 @@
 <div class="card-container" *ngFor="let recipe of recipes; let i = index">
 	<img src="{{recipe.img}}"/>
-	<div class="name-wrapper"><h2 class="name">{{recipe.name}}</h2></div>
+	<div class="wrapper">
+		<h2 class="name">{{recipe.name}}</h2>
+	</div>
+	<h2 class="size">{{recipe.size}}</h2>
 	<button class="delete-button" (click)="recipes.splice(i, 1)">x</button>
 </div>
 <div class="button-container" (click)="addRecipe()"><button>+</button></div>
