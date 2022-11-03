@@ -1,9 +1,6 @@
 .hamburger-container{
-	&:hover {
-		background-color: black;
-	}
 
-	&:active {
+	&:hover {
 		background-color: black;
 	}
 }
@@ -21,7 +18,7 @@
 	position: absolute;
 	top: 50px;
 	right: 0px;
-	z-index: 1;
+	z-index: 2;
 
 	a {
 		border-top: none;
@@ -30,6 +27,7 @@
 		cursor: pointer;
 		padding: 18px 100px 18px 18px;
 		text-decoration: none;
+		z-index: 2;
 
 		&:hover {
 			color: green;
@@ -47,4 +45,5 @@
 	right: 0px;
 	width: 100vw;
 	height: 100vh;
+	z-index: 1;
 }

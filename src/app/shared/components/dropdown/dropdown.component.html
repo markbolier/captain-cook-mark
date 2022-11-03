@@ -3,6 +3,6 @@
 	<div [ngClass]="isOpen ? 'dropdown-container' : 'dropdown-container__hidden'">
 		<a (click)="toggleMenu()" routerLink="/recipes">Recepten</a>
 		<a (click)="toggleMenu()" routerLink="">Planner</a>
+		<div (click)="toggleMenu()" class="backdrop"></div>
 	</div>
 </div>
-<div (click)="toggleMenu()" class="backdrop"></div>
