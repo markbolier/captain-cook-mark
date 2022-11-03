@@ -1,0 +1,52 @@
+.backdrop {
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	width: 100vw;
+	height: 100vh;
+	z-index: 1;
+}
+
+.dropdown-container {
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	top: 50px;
+	right: 0px;
+
+	&__hidden {
+		display: none;
+	};
+
+	a {
+		border-top: none;
+		border: 1px solid #EFEFEF;
+		color: #696969;
+		cursor: pointer;
+		padding: 18px 100px 18px 18px;
+		text-decoration: none;
+		z-index: 2;
+
+		&:hover {
+			color: green;
+		};
+	};
+};
+
+.hamburger-container{
+
+	.hamburger {
+		border: none;
+	}
+
+	.hamburger-icon {
+		cursor: pointer;
+		height: 15px;
+		padding: 15px;
+	};
+
+	&:hover {
+		background-color: black;
+	};
+};
