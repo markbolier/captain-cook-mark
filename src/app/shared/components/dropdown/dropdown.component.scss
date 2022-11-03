@@ -1,52 +1,62 @@
 .backdrop {
-	position: fixed;
-	top: 0px;
-	right: 0px;
-	width: 100vw;
-	height: 100vh;
-	z-index: 1;
+  height: 100vh;
+  position: fixed;
+  right: 0px;
+  top: 0px;
+  width: 100vw;
+  z-index: 1;
 }
 
 .dropdown-container {
-	background-color: white;
-	display: flex;
-	flex-direction: column;
-	position: absolute;
-	top: 50px;
-	right: 0px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 0px;
+  top: 50px;
 
-	&__hidden {
-		display: none;
-	};
+  &__hidden {
+    display: none;
+  }
 
-	a {
-		border-top: none;
-		border: 1px solid #EFEFEF;
-		color: #696969;
-		cursor: pointer;
-		padding: 18px 100px 18px 18px;
-		text-decoration: none;
-		z-index: 2;
+  a {
+    color: #696969;
+    text-decoration: none;
+    z-index: 2;
 
-		&:hover {
-			color: green;
-		};
-	};
-};
+    &:hover {
+      color: green;
+    }
+  }
+}
 
-.hamburger-container{
+.hamburger-container {
+  .hamburger {
+    border: none;
+  }
 
-	.hamburger {
-		border: none;
-	}
+  .hamburger-icon {
+    cursor: pointer;
+    height: 15px;
+    padding: 15px;
+  }
 
-	.hamburger-icon {
-		cursor: pointer;
-		height: 15px;
-		padding: 15px;
-	};
+  &:hover {
+    background-color: black;
+  }
+}
 
-	&:hover {
-		background-color: black;
-	};
-};
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  z-index: 2;
+
+  li {
+    border: 1px solid #efefef;
+    cursor: pointer;
+    margin: 0;
+    padding: 10px;
+    padding: 18px 100px 18px 18px;
+  }
+}
