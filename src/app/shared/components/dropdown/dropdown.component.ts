@@ -8,10 +8,10 @@ import { Component, OnInit } from '@angular/core';
 export class DropdownComponent implements OnInit {
 
 
-  isOpen: boolean = false;
+  isOpen = false;
 
   toggleMenu() {
-    this.isOpen = this.isOpen ? false : true;
+    this.isOpen = !this.isOpen;
   }
 
   constructor() { }
