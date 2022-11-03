@@ -1,5 +1,5 @@
 <div class="hamburger-container">
-	<button id="menubutton1" aria-haspopup="true" aria-expanded="false" aria-controls="menu1" class="hamburger" (click)="toggleMenu()" (keyup.Esc)="toggleMenu()"><img  class="hamburger-icon" src="assets/images/hamburger.svg"></button>
+	<button id="menubutton1" aria-haspopup="true" aria-expanded="false" aria-controls="menu1" class="hamburger" (click)="toggleMenu()" (keyup.Esc)="toggleMenu()"><img  class="hamburger-icon" src="assets/images/hamburger.svg" alt="menu"></button>
 	<div [ngClass]="isOpen ? 'dropdown-container' : 'dropdown-container__hidden'">
 		<ul id="menu1" role="menu" tabindex="-1" aria-labelledby="menubutton1" aria-activedescendant="mi1">
 			<li id="mi1" role="menuitem"><a (click)="toggleMenu()" routerLink="/recipes">Recepten</a></li>
