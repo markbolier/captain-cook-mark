@@ -2,7 +2,7 @@
 	<img (click)="toggleMenu()" class="hamburger" src="assets/images/hamburger.svg">
 	<div [ngClass]="isOpen ? 'dropdown-container' : 'dropdown-container__hidden'">
 		<a (click)="toggleMenu()" routerLink="/recipes">Recepten</a>
-		<a (click)="toggleMenu()" routerLink="">Planner</a>
+		<a (click)="toggleMenu()" routerLink="/planner">Planner</a>
 		<div (click)="toggleMenu()" class="backdrop"></div>
 	</div>
 </div>
