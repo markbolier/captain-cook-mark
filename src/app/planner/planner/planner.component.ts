@@ -15,7 +15,7 @@ recipes = [
     { id: 5, name: 'Sushi', size: '2p', img: 'https://ohmyfoodness.nl/wp-content/uploads/2022/06/krokant_gefrituurde-sushi-feat.jpg' },
 ];
   
-  addRecipe() {
+  onAdd() {
     this.recipes.push({id: 6, name: 'New recipe', size: '2p', img: 'none'});
   }
 

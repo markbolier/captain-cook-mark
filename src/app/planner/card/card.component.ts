@@ -10,8 +10,6 @@ export class CardComponent implements OnInit {
   @Input() size: any;
   @Input() name: any;
   @Input() img: any;
-  @Input() recipes: any;
-  @Input() i: any;
 
   @Output() delete = new EventEmitter<number>();
 
