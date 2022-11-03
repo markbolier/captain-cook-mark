@@ -1,4 +1,5 @@
-<div class="dropdown-container">
-	<a routerLink="/recipes">Recepten</a>
-	<a routerLink="">Planner</a>
+<img (click)="toggleMenu()" class="hamburger" src="assets/images/hamburger.svg">
+<div [ngClass]="isOpen ? 'dropdown-container' : 'dropdown-container__hidden'">
+	<a (click)="toggleMenu()" routerLink="/recipes">Recepten</a>
+	<a (click)="toggleMenu()" routerLink="">Planner</a>
 </div>

@@ -1,7 +1,24 @@
+.hamburger {
+		cursor: pointer;
+		height: 15px;
+		padding: 15px;
+
+		&:hover {
+			background-color: grey;
+			svg {
+				fill: red;
+			}
+		}
+	};
+
 .dropdown-container {
+	background-color: white;
 	display: flex;
 	flex-direction: column;
-	background-color: white;
+	position: absolute;
+	top: 60px;
+	right: 0px;
+
 
 	a {
 		border-top: none;
@@ -11,4 +28,8 @@
 		padding: 18px 100px 18px 18px;
 		text-decoration: none;
 	}
+}
+
+.dropdown-container__hidden {
+	display: none;
 }

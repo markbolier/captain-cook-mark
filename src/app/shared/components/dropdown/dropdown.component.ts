@@ -7,6 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DropdownComponent implements OnInit {
 
+
+  isOpen: boolean = false;
+
+  toggleMenu() {
+    this.isOpen = this.isOpen ? false : true;
+  }
+
   constructor() { }
 
   ngOnInit(): void {
