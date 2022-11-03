@@ -1,5 +1,5 @@
 <div class="hamburger-container">
-	<button class="hamburger" (click)="toggleMenu()"><img  class="hamburger-icon" src="assets/images/hamburger.svg"></button>
+	<button class="hamburger" (click)="toggleMenu()" (keyup.Esc)="toggleMenu()"><img  class="hamburger-icon" src="assets/images/hamburger.svg"></button>
 	<div [ngClass]="isOpen ? 'dropdown-container' : 'dropdown-container__hidden'">
 		<a (click)="toggleMenu()" routerLink="/recipes">Recepten</a>
 		<a (click)="toggleMenu()" routerLink="/planner">Planner</a>
