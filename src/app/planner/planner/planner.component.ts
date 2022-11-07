@@ -7,15 +7,15 @@ import { PlannedService } from "src/app/shared/services/planned.service";
   styleUrls: ["./planner.component.scss"],
 })
 export class PlannerComponent implements OnInit {
-  recipes: any[] = [];
-  addRecipe() {}
+  plannedMeals: any[] = [];
+  addMeal() {}
   onDelete(id: number) {}
 
   constructor(private plannedService: PlannedService) {}
 
   ngOnInit() {
-    this.recipes = this.plannedService.recipes;
-    this.addRecipe = this.plannedService.addRecipe;
+    this.plannedMeals = this.plannedService.plannedMeals;
+    this.addMeal = this.plannedService.addMeal;
     this.onDelete = this.plannedService.onDelete;
   }
 }

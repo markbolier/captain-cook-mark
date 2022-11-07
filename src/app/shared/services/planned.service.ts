@@ -4,7 +4,7 @@ import { Injectable } from "@angular/core";
   providedIn: "root",
 })
 export class PlannedService {
-  recipes = [
+  plannedMeals = [
     {
       id: 1,
       name: "Caponata",
@@ -42,13 +42,13 @@ export class PlannedService {
     },
   ];
 
-  addRecipe() {
-    this.recipes.push({ id: Math.random(), name: "", size: "", img: "", ingredients: [] });
+  addMeal() {
+    this.plannedMeals.push({ id: Math.random(), name: "", size: "", img: "", ingredients: [] });
   }
 
   onDelete(id: number) {
-    const deletedRecipe = this.recipes.findIndex((recipe) => recipe.id === id);
-    this.recipes.splice(deletedRecipe, 1);
+    const deletedMeal = this.plannedMeals.findIndex((meal) => meal.id === id);
+    this.plannedMeals.splice(deletedMeal, 1);
   }
 
   constructor() {}
