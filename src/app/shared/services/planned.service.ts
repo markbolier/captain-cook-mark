@@ -1,4 +1,5 @@
 import { Injectable } from "@angular/core";
+import { provideProtractorTestingSupport } from "@angular/platform-browser";
 const { of } = require("rxjs");
 
 @Injectable({
@@ -47,7 +48,11 @@ export class PlannedService {
     },
   ];
 
+  groceryList = [...this.plannedMeals.map((meal) => meal.ingredients).flat()];
+
   $plannedMealsChanges = of(this.plannedMeals);
+
+  $groceryListChanges = of(this.groceryList);
 
   addMeal() {
     this.plannedMeals.push({ id: Math.random(), name: "", size: "", img: "", ingredients: [] });
