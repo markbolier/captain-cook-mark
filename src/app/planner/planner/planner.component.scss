@@ -15,12 +15,16 @@
   }
 }
 
-.planner-container {
-  display: flex;
-}
-
 .cards-wrapper {
   display: flex;
   flex-direction: column;
   width: 70vw;
+}
+
+.planner-container {
+  display: flex;
+}
+
+.title-recipe {
+  font-weight: 400;
 }
