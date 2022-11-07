@@ -1,15 +1,16 @@
 .button-container {
-	margin: 20px;
-	text-align: center;
-	border: 1px solid #EFEFEF;
-	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.10);
-	background-color:#EFEFEF;
-	
-	button {
-		background-color: none;
-		border: none;
-		height: 150px;
-		color: white;
-		font-size: 100px;
-	};
-};
+  background-color: #efefef;
+  border: 1px solid #efefef;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  margin: 20px;
+  text-align: center;
+
+  button {
+    background-color: none;
+    border: none;
+    color: white;
+    font-size: 100px;
+    height: 150px;
+  }
+}
