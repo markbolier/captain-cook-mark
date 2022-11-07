@@ -42,10 +42,6 @@ export class PlannedService {
     },
   ];
 
-  getRecipes() {
-    return this.recipes;
-  }
-
   addRecipe() {
     this.recipes.push({ id: Math.random(), name: "", size: "", img: "", ingredients: [] });
   }

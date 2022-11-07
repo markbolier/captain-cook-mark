@@ -9,12 +9,13 @@ import { PlannedService } from "src/app/shared/services/planned.service";
 export class PlannerComponent implements OnInit {
   recipes: any[] = [];
   addRecipe() {}
-  onDelete() {}
+  onDelete(id: number) {}
 
   constructor(private plannedService: PlannedService) {}
 
-  ngOnInit(): void {
+  ngOnInit() {
     this.recipes = this.plannedService.recipes;
-    console.log(this.plannedService);
+    this.addRecipe = this.plannedService.addRecipe;
+    this.onDelete = this.plannedService.onDelete;
   }
 }
