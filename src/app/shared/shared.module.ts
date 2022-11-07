@@ -4,10 +4,11 @@ import { RouterModule } from "@angular/router";
 
 import { DropdownComponent } from "./components/dropdown/dropdown.component";
 import { NavigationComponent } from "./components/navigation/navigation.component";
+import { AsideComponent } from "./components/aside/aside.component";
 
 @NgModule({
-  declarations: [NavigationComponent, DropdownComponent],
+  declarations: [NavigationComponent, DropdownComponent, AsideComponent],
   imports: [CommonModule, RouterModule],
-  exports: [NavigationComponent],
+  exports: [NavigationComponent, DropdownComponent, AsideComponent],
 })
 export class SharedModule {}
