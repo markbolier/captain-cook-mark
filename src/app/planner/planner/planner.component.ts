@@ -8,14 +8,20 @@ import { PlannedService } from "src/app/shared/services/planned.service";
 })
 export class PlannerComponent implements OnInit {
   plannedMeals: any[] = [];
-  addMeal() {}
-  onDelete(id: number) {}
+  addMeal() {
+    this.plannedService.addMeal();
+  }
+  onDelete(id: number) {
+    this.plannedService.onDelete(id);
+  }
 
   constructor(private plannedService: PlannedService) {}
 
   ngOnInit() {
     this.plannedMeals = this.plannedService.plannedMeals;
-    this.addMeal = this.plannedService.addMeal;
-    this.onDelete = this.plannedService.onDelete;
+
+    this.plannedService.$plannedMealsChanges.subscribe((newMealsArray: any[]) => {
+      this.plannedMeals = newMealsArray;
+    });
   }
 }

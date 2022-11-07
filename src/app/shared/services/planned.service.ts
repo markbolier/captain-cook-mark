@@ -1,4 +1,5 @@
 import { Injectable } from "@angular/core";
+const { of } = require("rxjs");
 
 @Injectable({
   providedIn: "root",
@@ -26,21 +27,9 @@ export class PlannedService {
       img: "https://realfood.tesco.com/media/images/1400x919-MargaritaPizza-555a4065-2573-4b41-bcf3-7193cd095d8f-0-1400x919.jpg",
       ingredients: ["Ingredient 1", "Ingredient 2", "Ingredient 3", "Ingredient 4", "Ingredient 5"],
     },
-    {
-      id: 4,
-      name: "Omelet",
-      size: "2p",
-      img: "https://static.ah.nl/static/recepten/img_103723_1024x748_JPG.jpg",
-      ingredients: ["Ingredient 1", "Ingredient 2", "Ingredient 3", "Ingredient 4", "Ingredient 5"],
-    },
-    {
-      id: 5,
-      name: "Sushi",
-      size: "2p",
-      img: "https://ohmyfoodness.nl/wp-content/uploads/2022/06/krokant_gefrituurde-sushi-feat.jpg",
-      ingredients: ["Ingredient 1", "Ingredient 2", "Ingredient 3", "Ingredient 4", "Ingredient 5"],
-    },
   ];
+
+  $plannedMealsChanges = of(this.plannedMeals);
 
   addMeal() {
     this.plannedMeals.push({ id: Math.random(), name: "", size: "", img: "", ingredients: [] });
