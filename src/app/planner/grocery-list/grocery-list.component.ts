@@ -13,7 +13,6 @@ export class GroceryListComponent implements OnInit {
 
   ngOnInit() {
     this.groceryList = this.plannedService.groceryList;
-    console.log(this.groceryList);
 
     this.plannedService.$groceryListChanges.subscribe((newGroceriesArray: any[]) => {
       this.groceryList = newGroceriesArray;
