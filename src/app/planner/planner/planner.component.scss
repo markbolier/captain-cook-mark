@@ -10,7 +10,22 @@
     background-color: none;
     border: none;
     color: white;
+    cursor: pointer;
     font-size: 100px;
     height: 150px;
   }
+}
+
+.cards-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 70vw;
+}
+
+.planner-container {
+  display: flex;
+}
+
+.title-recipe {
+  font-weight: 400;
 }

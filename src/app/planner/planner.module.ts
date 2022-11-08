@@ -3,11 +3,13 @@ import { CommonModule } from '@angular/common';
 import { SharedModule } from '../shared/shared.module';
 import { PlannerComponent } from './planner/planner.component';
 import { CardComponent } from './card/card.component';
+import { GroceryListComponent } from './grocery-list/grocery-list.component';
 
 @NgModule({
   declarations: [
     PlannerComponent,
-    CardComponent
+    CardComponent,
+    GroceryListComponent
   ],
   imports: [
     CommonModule,

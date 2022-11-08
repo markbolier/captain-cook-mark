@@ -1,5 +1,19 @@
-<app-card *ngFor="let recipe of recipes; let i = index" [id]="recipe.id" [size]="recipe.size" [img]="recipe.img" [name]="recipe.name" (delete)="onDelete($event)">
-	{{recipe.name}}
-</app-card>
-<div class="button-container" (click)="addRecipe()"><button>+</button></div>
-
+<div class="planner-container">
+  <div class="cards-wrapper">
+    <app-card
+      *ngFor="let meal of plannedMeals"
+      [id]="meal.id"
+      [size]="meal.size"
+      [img]="meal.img"
+      [name]="meal.name"
+      (delete)="onDelete(meal.id)"
+    >
+      {{ meal.name }}
+    </app-card>
+    <div class="button-container" (click)="addMeal()"><button>+</button></div>
+  </div>
+  <app-aside>
+    <h1 class="title-recipe">Boodschappenlijst</h1>
+    <app-grocery-list></app-grocery-list>
+  </app-aside>
+</div>
